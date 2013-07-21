@@ -1,0 +1,139 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>OpenStack Tour de Force: OSCON 2013</title>
+    <link rel="stylesheet" type="text/css" href="impress.css" />
+    <link rel="stylesheet" type="text/css" href="impress-override.css" />
+  </head>
+  <body class="impress-not-supported">
+    <div class="fallback-message">
+      <p>Your browser <b>doesn't support the features required</b> by
+      impress.js, so you are presented with a simplified version of
+      this presentation.</p>
+      <p>For the best experience please use the latest <b>Chrome</b>,
+      <b>Safari</b> or <b>Firefox</b> browser.</p>
+    </div>
+    <div id="impress">
+      <div class="step slide invisible" data-x="0" data-y="-2000" data-scale="1">
+        <img class="with-heading" src="openstack-logo.svg" style="float:left; margin-right: 5%;"/>
+        <h2>Tour de Force</h2>
+        <p>Cloud From Scratch in No Time<br/>
+           OSCON 2013, Portland, OR &mdash; July 23, 2013</p>
+      </div>
+      <div class="step invisible" data-x="0" data-y="-3000" data-scale="1">
+        <p>Who the <strong>$?#%</strong> is this guy?</p>
+      </div>
+      <div class="step invisible" data-x="0" data-y="-4000" data-scale="1">
+        <h3>Florian Haas</h3>
+        <p><a href="http://www.hastexo.com/who/florian">http://www.hastexo.com/who/florian</a></p>
+        <p><a href="http://goo.gl/ANHQe">http://goo.gl/ANHQe</a></p>
+        <p><code>florian@hastexo.com</code></p>
+        <p><a href="https://twitter.com/hastexo"><code>@hastexo</code></a></p>
+      </div>
+
+
+      <div class="step invisible" data-x="0" data-y="2000" data-scale="1">
+        <h2>OpenStack Architecture</h2>
+	<img class="with-heading" height="100%" src="openstack-arch-grizzly-v1-conceptual.png" type="image/png"/>
+        <p class="caption">Image credit: Ken Pepple, from <a href="http://docs.openstack.org/trunk/openstack-compute/admin/content/conceptual-architecture.html">OpenStack documentation</a></p>
+      </div>
+
+      <div class="step invisible" data-x="0" data-y="4000" data-scale="1">
+        <h2>OpenStack Node Roles</h2>
+        <p>Logical, atomic, composable classes of nodes in an OpenStack cloud</p>
+      </div>
+
+      <div class="step invisible" data-x="-7000" data-y="6000" data-scale="1">
+        <h2>Infrastructure Node</h2>
+        <p>Runs a <strong>database</strong> and a <strong>message
+        queue</strong> server<br/>(by default, MySQL and RabbitMQ)</p>
+      </div>
+
+      <div class="step invisible" data-x="-5000" data-y="6000" data-scale="1">
+        <h2>Authentication Node</h2>
+        <p>Runs the OpenStack <strong>Identity Service</strong> providing <strong>authentication</strong> and a <strong>service catalog</strong></p>
+      </div>
+
+      <div class="step invisible" data-x="-3000" data-y="6000" data-scale="1">
+        <h2>API Node</h2>
+        <p>Provides <strong>ReSTful API endpoints</strong> to OpenStack services</p>
+      </div>
+
+      <div class="step invisible" data-x="-1000" data-y="6000" data-scale="1">
+        <h2>Controller Node</h2>
+        <p>Provides <strong>scheduling</strong> and <strong>registration</strong> services internal to OpenStack</p>
+      </div>
+
+      <div class="step invisible" data-x="1000" data-y="6000" data-scale="1">
+        <h2>Network Node</h2>
+        <p>Provides <strong>network connectivity</strong> within the cloud and to public networks</p>
+      </div>
+
+      <div class="step invisible" data-x="3000" data-y="6000" data-scale="1">
+        <h2>Compute Node</h2>
+        <p>Hosts and runs <strong>virtual machines</strong> (guests)</p>
+      </div>
+
+      <div class="step invisible" data-x="5000" data-y="6000" data-scale="1">
+        <h2>(Block) Storage Node</h2>
+        <p>Provides <strong>persistent block storage</strong> to guests</p>
+      </div>
+
+      <div class="step invisible" data-x="7000" data-y="6000" data-scale="1">
+        <h2>Dashboard Node</h2>
+        <p>Provides a <strong>unified user interface</strong> to cloud administrators</p>
+      </div>
+
+      <div class="step" data-x="0000" data-y="8000" data-scale="2">
+        <h2>Tutorial Architecture</h2>
+      </div>
+
+      <div class="step" data-x="-750" data-y="8500" data-scale="1">
+        <h2>alice</h2>
+	<p>Infrastructure<br/>Auth<br/>API<br/>Controller<br/>Storage<br/>Dashboard</p>
+      </div>
+
+      <div class="step" data-x="-250" data-y="8500" data-scale="1">
+        <h2>bob</h2>
+	<p>Compute</p>
+      </div>
+
+      <div class="step" data-x="250" data-y="8500" data-scale="1">
+        <h2>charlie</h2>
+	<p>Network</p>
+      </div>
+
+      <div class="step" data-x="750" data-y="8500" data-scale="1">
+        <h2>puppet</h2>
+	<p>Puppet master</p>
+      </div>
+
+      <div class="step" data-x="-1000" data-y="10000" data-scale="1">
+        <iframe class="full" src="http://192.168.122.100:3000"></iframe>
+      </div>
+
+      <div class="step" data-x="1000" data-y="10000" data-scale="1">
+	foo
+        <iframe class="full" src="http://192.168.122.111"></iframe>
+      </div>
+
+
+      <div class="step invisible" data-x="0" data-y="20000" data-scale="1">
+        <p>Liked this talk?</p>
+        <p><code>@hastexo</code></p>
+        <p class="small"><a href="http://www.hastexo.com/oscon2013" >http://www.hastexo.com/oscon2013</a></p>
+        <p class="small"><a href="https://github.com/fghaas/oscon2013" >https://github.com/fghaas/oscon2013</a></p>
+        <p><a href="http://creativecommons.org/licenses/by-sa/2.0/" ><img src="by-sa.svg" alt="CC-BY-SA 2.0" /></a></p>
+      </div>
+
+      <div class="step invisible" data-x="0" data-y="20000" data-scale="1">
+	<img class="full" height="100%" src="link.svg" type="image/svg"/>
+      </div>
+
+    </div>
+
+    <script type="text/javascript" src="impress.js"></script>
+    <script type="text/javascript">
+      impress().init();
+    </script>
+  </body>
+</html>

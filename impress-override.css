@@ -1,0 +1,265 @@
+/* Import Google Web Fonts */
+
+@font-face {
+  font-family: 'Josefin Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: /* local('Josefin Slab'), local('JosefinSlab'), */ url('fonts/Josefin_Slab/JosefinSlab-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Josefin Slab';
+  font-style: normal;
+  font-weight: 700;
+  src: /* local('Josefin Slab Bold'), local('JosefinSlab-Bold'), */ url('fonts/Josefin_Slab/JosefinSlab-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 200;
+  src: /* local('Raleway ExtraLight'), local('Raleway-ExtraLight'), */ url('fonts/Raleway/Raleway-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: /* local('Raleway'), */ url('fonts/Raleway/Raleway-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: /*local('Raleway Bold'), local ('Raleway-Bold'), */ url('fonts/Raleway/Raleway-Bold.ttf') format('truetype');
+}
+
+div.image-frame {
+  padding: 10px;
+}
+
+.column-left {
+    float: left;
+    width: 50%;
+}
+.column-right {
+    float: right;
+    width: 50%;
+}
+
+.float-left {
+  float: left;
+  margin-left: 1em;
+}
+
+.caption {
+  font-size: 12pt;
+}
+
+.slide {
+}
+
+body {
+  text-align: center;
+  background: #f0f0f0; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #f0f0f0 0%, #bebebe 31%, #12547a 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#f0f0f0), color-stop(31%,#bebebe), color-stop(100%,#12547a)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover, #f0f0f0 0%,#bebebe 31%,#12547a 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover, #f0f0f0 0%,#bebebe 31%,#12547a 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover, #f0f0f0 0%,#bebebe 31%,#12547a 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center, #f0f0f0 0%,#bebebe 31%,#12547a 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#12547a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  font-family: 'Raleway', serif;
+  font-weight: 200;
+}
+
+strong {
+  white-space: nowrap;
+}
+
+.doublepage strong {
+  white-space: inherit;
+}
+
+.slide {
+}
+
+.step {
+  font-family: inherit;
+}
+
+.small {
+  font-size: 24pt;
+}
+
+.opaque {
+    opacity: 1 !important;
+}
+
+.huge {
+  font-size: 100pt;
+}
+
+.gigantic {
+  font-size: 170pt;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.impress-enabled .step.invisible {
+    opacity: 0;
+}
+
+.impress-enabled .step.transparent {
+    opacity: 0.1;
+}
+
+.impress-enabled .step.invisible.active {
+    opacity: 1;
+}
+
+.impress-enabled .step.transparent.active {
+    opacity: 1;
+}
+
+.fit {
+  max-height: 100% !important;
+  max-width: 100% !important;
+  height: 100%;
+  width: 100%;
+}
+
+iframe.full {
+  height: 100%;
+  width: 100%;
+}
+
+img.full {
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 2%;
+}
+
+iframe.with-heading {
+  height: 75%;
+  width: 100%;
+}
+
+img.with-heading {
+  height: 75%;
+  max-width: 100%;
+}
+
+code {
+  font-family: 'Josefin Slab', monospace;
+}
+
+hr.border {
+  border-color: black;
+  width: 100%
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin-bottom: 5%
+}
+
+p {
+  margin-bottom: 5%
+}
+
+h1 {
+  font-size: 150%;
+  line-height: 100%;
+}
+
+h2 {
+  font-size: 140%;
+  line-height: 100%;
+}
+
+h3 {
+  font-size: 130%;
+  line-height: 100%;
+}
+
+h4 {
+  font-size: 120%;
+  line-height: 100%;
+}
+
+h5 {
+  font-size: 110%;
+  line-height: 100%;
+}
+
+h6 {
+  line-height: 100%;
+}
+
+/* column container */
+.colmask {
+    clear: both;
+    float: left;
+    width: 100%;			/* width of whole page */
+    overflow: hidden;		/* This chops off any overhanging divs */
+}
+/* common column settings */
+.colright,
+.colmid,
+.colleft {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+.col1,
+.col2,
+.col3 {
+    float: left;
+    position: relative;
+    overflow: hidden;
+    padding: 0 0 0 0;
+}
+/* 2 Column (double page) settings */
+.doublepage {
+}
+.doublepage .colleft {
+    right:50%;			/* right column width */
+ }
+.doublepage .col1 {
+    padding-left: 0;
+    padding-right: 3%;
+    width: 46%;			/* left column content width (column width minus left and right padding) */
+    left: 50%;			/* right column width plus left column left padding */
+    text-align: right;
+    border-right: solid 1px black;
+}
+.doublepage .col2 {
+    padding-left: 3%;
+    padding-right: 0;
+    width: 46%;			/* right column content width (column width minus left and right padding) */
+    left: 53%;			/* (right column width) plus (left column left and right padding) plus (right column left padding) */
+    text-align: left;
+
+.attribution {
+  font-size: 4pt;
+}
+
+blockquote:before {
+  content: '\201C';
+  font-size: 300%;
+  font-family: serif;
+}
+
+blockquote:after {
+  content: '\201D';
+  font-family: serif;
+  font-size: 300%;
+}
