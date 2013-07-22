@@ -58,6 +58,16 @@ div.image-frame {
 .slide {
 }
 
+.slide ul {
+  text-align: left;
+  list-style-type: disc
+}
+
+.slide li {
+  margin-bottom: 1em;
+}
+
+
 body {
   text-align: center;
   background: #f0f0f0; /* Old browsers */

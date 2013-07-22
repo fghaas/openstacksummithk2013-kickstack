@@ -13,16 +13,34 @@
       <b>Safari</b> or <b>Firefox</b> browser.</p>
     </div>
     <div id="impress">
-      <div class="step slide invisible" data-x="0" data-y="-2000" data-scale="1">
+      <div class="step slide invisible" data-x="-2000" data-y="0" data-scale="1">
+	<h2>Getting Started</h2>
+	<ul>
+	  <li>Follow <strong>instructions</strong> at <a
+	  href="http://www.hastexo.com/oscon2013">http://www.hastexo.com/oscon2013</a>.</li>
+	  <li>If you <strong>don't</strong> have VM images yet, come
+	  see me for a USB drive.</li>
+	  <li>If you downloaded the images <strong>from
+	  Dropbox</strong> (not Ubuntu One), please come see me.</li>
+	  <li><strong>Start all 3 VMs.</strong></li>
+	  <li>Make sure you can do <code>ssh -p 22111
+	  root@localhost</code> (password
+	  <code>openstack</code>).</li>
+	  <li>I'm the <strong>tall dude</strong> in the light blue
+	  shirt with his name above the breast pocket.</li>
+	</ul>
+      </div>
+
+      <div class="step slide invisible" data-x="0" data-y="0" data-scale="1">
         <img class="with-heading" src="openstack-logo.svg" style="float:left; margin-right: 5%;"/>
         <h2>Tour de Force</h2>
         <p>Cloud From Scratch in No Time<br/>
            OSCON 2013, Portland, OR &mdash; July 23, 2013</p>
       </div>
-      <div class="step invisible" data-x="0" data-y="-3000" data-scale="1">
+      <div class="step invisible" data-x="0" data-y="-1000" data-scale="1">
         <p>Who the <strong>$?#%</strong> is this guy?</p>
       </div>
-      <div class="step invisible" data-x="0" data-y="-4000" data-scale="1">
+      <div class="step invisible" data-x="0" data-y="-2000" data-scale="1">
         <h3>Florian Haas</h3>
         <p><a href="http://www.hastexo.com/who/florian">http://www.hastexo.com/who/florian</a></p>
         <p><a href="http://goo.gl/ANHQe">http://goo.gl/ANHQe</a></p>
@@ -33,7 +51,7 @@
 
       <div class="step invisible" data-x="0" data-y="2000" data-scale="1">
         <h2>OpenStack Architecture</h2>
-	<img class="with-heading" height="100%" src="openstack-arch-grizzly-v1-conceptual.png" type="image/png"/>
+	<img class="with-heading" height="100%" src="openstack-arch-grizzly-v1-conceptual.svg" type="image/svg"/>
         <p class="caption">Image credit: Ken Pepple, from <a href="http://docs.openstack.org/trunk/openstack-compute/admin/content/conceptual-architecture.html">OpenStack documentation</a></p>
       </div>
 
@@ -108,12 +126,31 @@
       </div>
 
       <div class="step" data-x="-1000" data-y="10000" data-scale="1">
-        <iframe class="full" src="http://192.168.122.100:3000"></iframe>
+	<h2><a href="http://192.168.122.100:3000" target="puppetdashboard">Puppet Dashboard</a></h2>
       </div>
 
       <div class="step" data-x="1000" data-y="10000" data-scale="1">
-	foo
-        <iframe class="full" src="http://192.168.122.111"></iframe>
+	<h2><a href="http://192.168.122.111" target="horizon">OpenStack Dashboard</a></h2>
+      </div>
+
+      <div class="step slide" data-x="-3000" data-y="12000" data-scale="1">
+	<h2>puppet</h2>
+        <iframe class="with-heading" src="http://localhost:4100"></iframe>
+      </div>
+
+      <div class="step slide" data-x="-1000" data-y="12000" data-scale="1">
+	<h2>alice</h2>
+        <iframe class="with-heading" src="http://localhost:4111"></iframe>
+      </div>
+
+      <div class="step slide" data-x="1000" data-y="12000" data-scale="1">
+	<h2>bob</h2>
+        <iframe class="with-heading" src="http://localhost:4112"></iframe>
+      </div>
+
+      <div class="step slide" data-x="3000" data-y="12000" data-scale="1">
+	<h2>charlie</h2>
+        <iframe class="with-heading" src="http://localhost:4113"></iframe>
       </div>
 
 
