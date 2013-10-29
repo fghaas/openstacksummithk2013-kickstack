@@ -3,7 +3,7 @@
     <title>OpenStack Tour de Force: OSCON 2013</title>
   </head>
   <body>
-      <section class="step slide invisible" data-x="-2000" data-y="0" data-scale="1">
+      <section>
 	<h2>Getting Started</h2>
 	<ul>
 	  <li>Go to <a href="http://10.71.71.17/lceu2013">http://10.71.71.17/lceu2013</a></li>
@@ -17,16 +17,16 @@
 	  <li>Ready to rock!</li>
 	</ul>
       </section>
-      <section class="step slide invisible" data-x="0" data-y="0" data-scale="1">
+      <section>
         <img class="with-heading" src="openstack-logo.svg" style="float:left; margin-right: 5%;"/>
         <h2>Tour de Force</h2>
         <p>Cloud From Scratch in No Time<br/>
            CloudOpen 2013, Edinburgh, Scotland &mdash; Oct 21, 2013</p>
       </section>
-      <section class="step invisible" data-x="0" data-y="-2000" data-scale="1">
+      <section>
         <p>Who the <strong>$?#%</strong> is this guy?</p>
       </section>
-      <section class="step invisible" data-x="0" data-y="-3000" data-scale="1">
+      <section>
         <h3>Florian Haas</h3>
         <p><a href="http://www.hastexo.com/who/florian">http://www.hastexo.com/who/florian</a></p>
         <p><a href="http://goo.gl/ANHQe">http://goo.gl/ANHQe</a></p>
@@ -36,163 +36,163 @@
       </section>
 
 
-      <section class="step opaque" data-x="0" data-y="2000" data-scale="2">
+      <section>
         <h2>OpenStack Architecture</h2>
 	<img class="with-heading" height="100%" src="openstack-arch-grizzly-v1-conceptual.svg" type="image/svg"/>
         <p class="caption">Image credit: Ken Pepple, from <a href="http://docs.openstack.org/trunk/openstack-compute/admin/content/conceptual-architecture.html">OpenStack documentation</a></p>
       </section>
 
-      <section class="step" data-x="0" data-y="2350" data-scale="1"><!-- Identity --></section>
+      <section><!-- Identity --></section>
 
-      <section class="step" data-x="400" data-y="2100" data-scale="1"><!-- Image --></section>
+      <section><!-- Image --></section>
 
-      <section class="step" data-x="-100" data-y="2100" data-scale="1"><!-- Compute --></section>
+      <section><!-- Compute --></section>
 
-      <section class="step" data-x="-700" data-y="2000" data-scale="1"><!-- Network --></section>
+      <section><!-- Network --></section>
 
-      <section class="step" data-x="-700" data-y="2200" data-scale="1"><!-- Block --></section>
+      <section><!-- Block --></section>
 
-      <section class="step" data-x="700" data-y="2100" data-scale="1"><!-- Image --></section>
+      <section><!-- Image --></section>
 
-      <section class="step" data-x="0" data-y="1700" data-scale="1"><!-- Dashboard --></section>
+      <section><!-- Dashboard --></section>
 
-      <section class="step" data-x="0" data-y="2000" data-scale="2"><!-- Back to overview --></section>
+      <section><!-- Back to overview --></section>
 
-      <section class="step invisible" data-x="0" data-y="4000" data-scale="1">
+      <section>
         <h2>OpenStack Node Roles</h2>
         <p>Logical, atomic, composable classes of nodes in an OpenStack cloud</p>
       </section>
 
-      <section class="step invisible" data-x="-9000" data-y="6000" data-scale="1">
+      <section>
         <h2>Infrastructure Node</h2>
         <p>Runs a <strong>database</strong> and a <strong>message
         queue</strong> server<br/>(by default, MySQL and RabbitMQ)</p>
       </section>
 
-      <section class="step invisible" data-x="-7000" data-y="6000" data-scale="1">
+      <section>
         <h2>Authentication Node</h2>
         <p>Runs the OpenStack <strong>Identity Service</strong> providing <strong>authentication</strong> and a <strong>service catalog</strong></p>
       </section>
 
-      <section class="step invisible" data-x="-5000" data-y="6000" data-scale="1">
+      <section>
         <h2>API Node</h2>
         <p>Provides <strong>ReSTful API endpoints</strong> to OpenStack services</p>
       </section>
 
-      <section class="step invisible" data-x="-3000" data-y="6000" data-scale="1">
+      <section>
         <h2>Controller Node</h2>
         <p>Provides <strong>scheduling</strong> and <strong>registration</strong> services internal to OpenStack</p>
       </section>
 
-      <section class="step invisible" data-x="-1000" data-y="6000" data-scale="1">
+      <section>
         <h2>Network Node</h2>
         <p>Provides <strong>network connectivity</strong> within the cloud and to public networks</p>
       </section>
 
-      <section class="step invisible" data-x="1000" data-y="6000" data-scale="1">
+      <section>
         <h2>Compute Node</h2>
         <p>Hosts and runs <strong>virtual machines</strong> (guests)</p>
       </section>
 
-      <section class="step invisible" data-x="3000" data-y="6000" data-scale="1">
+      <section>
         <h2>(Block) Storage Node</h2>
         <p>Provides <strong>persistent block storage</strong> to guests</p>
       </section>
 
-      <section class="step invisible" data-x="5000" data-y="6000" data-scale="1">
+      <section>
         <h2>Dashboard Node</h2>
         <p>Provides a <strong>unified user interface</strong> to cloud administrators</p>
       </section>
 
-      <section class="step invisible" data-x="7000" data-y="6000" data-scale="1">
+      <section>
         <h2>Metering Node</h2>
         <p>Collects <strong>metering data</strong> from a unified event stream</p>
       </section>
 
-      <section class="step invisible" data-x="9000" data-y="6000" data-scale="1">
+      <section>
         <h2>Orchestration node</h2>
         <p>Runs an <strong>orchestration engine</strong> for complex guest workloads</p>
       </section>
 
-      <section class="step" data-x="0000" data-y="8000" data-scale="2">
+      <section>
         <h2>Tutorial Architecture</h2>
       </section>
 
-      <section class="step" data-x="-750" data-y="8500" data-scale="1">
+      <section>
         <h2>alice</h2>
 	<p>Infrastructure<br/>Auth<br/>API<br/>Controller<br/>Storage<br/>Dashboard<br/><em>Metering</em><br/><em>Orchestration</em></p>
       </section>
 
-      <section class="step" data-x="-250" data-y="8500" data-scale="1">
+      <section>
         <h2>bob</h2>
 	<p>Compute</p>
       </section>
 
-      <section class="step" data-x="250" data-y="8500" data-scale="1">
+      <section>
         <h2>charlie</h2>
 	<p>Network</p>
       </section>
 
-      <section class="step" data-x="750" data-y="8500" data-scale="1">
+      <section>
         <h2>puppet</h2>
 	<p>Puppet master</p>
       </section>
 
-      <section class="step" data-x="-1000" data-y="10000" data-scale="1">
+      <section>
         <h2>StackForge</h2>
         <p>Collection of <strong>Puppet modules</strong> for OpenStack <br/>(among many other things)</p>
       </section>
 
-      <section class="step" data-x="1000" data-y="10000" data-scale="1">
+      <section>
         <h2>Kickstack</h2>
         <p>OpenStack deployment with Puppet made simple</p>
         <p><a href="https://github.com/hastexo/kickstack">https://github.com/hastexo/kickstack</a></p>
       </section>
 
-      <section id="puppetdashboard" class="step" data-x="-1000" data-y="11000" data-scale="1">
+      <section id="puppetdashboard">
 	<h2><a href="http://192.168.122.100:3000" target="puppetdashboard">Puppet Dashboard</a></h2>
       </section>
 
-      <section id="horizon" class="step" data-x="1000" data-y="11000" data-scale="1">
+      <section id="horizon">
 	<h2><a href="http://192.168.122.111" target="horizon">OpenStack Dashboard</a></h2>
       </section>
 
-      <section class="step slide" data-x="-3000" data-y="12000" data-scale="1">
+      <section>
 	<h2>puppet</h2>
         <iframe class="with-heading" src="http://localhost:4100"></iframe>
       </section>
 
-      <section class="step slide" data-x="-1000" data-y="12000" data-scale="1">
+      <section>
 	<h2>alice</h2>
         <iframe class="with-heading" src="http://localhost:4111"></iframe>
       </section>
 
-      <section class="step slide" data-x="1000" data-y="12000" data-scale="1">
+      <section>
 	<h2>bob</h2>
         <iframe class="with-heading" src="http://localhost:4112"></iframe>
       </section>
 
-      <section class="step slide" data-x="3000" data-y="12000" data-scale="1">
+      <section>
 	<h2>charlie</h2>
         <iframe class="with-heading" src="http://localhost:4113"></iframe>
       </section>
 
-      <section class="step" data-x="0" data-y="13000" data-scale="1">
+      <section>
         <h2>Building the Cloud</h2>
       </section>
 
-      <section class="step" data-x="0" data-y="14000" data-scale="1">
+      <section>
         <h2>Using the Cloud</h2>
       </section>
 
-      <section class="step invisible" data-x="0" data-y="20000" data-scale="1">
+      <section>
         <p>Liked this talk?</p>
         <p><code>@hastexo</code></p>
         <p class="small"><a href="https://github.com/fghaas/lceu13" >https://github.com/fghaas/lceu13</a></p>
         <p><a href="http://creativecommons.org/licenses/by-sa/2.0/" ><img src="by-sa.svg" alt="CC-BY-SA 2.0" /></a></p>
       </section>
 
-      <section class="step invisible" data-x="0" data-y="22000" data-scale="1">
+      <section>
 	<h2>Want more?</h2>
 	<p><a href="http://academy.hastexo.com/schedule">http://academy.hastexo.com/schedule</a></p>
       </section>
